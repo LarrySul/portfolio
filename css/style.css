@@ -19,7 +19,7 @@ body{
 }
 .content{
 	grid-area: content;
-	background: url('img/');
+	background: url('../img/background.png');
 }
 
 .sidebar{

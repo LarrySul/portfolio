@@ -6,7 +6,7 @@
 	--blue:#827dfd;
 	--white:#ffffff;
 	--hero: #373d46;
-	--ash: #98a0ad;
+	--ash: #343538;
 	--action: #867bfb;
 	--shadow: #bcc5d8;
 	--footer: #c1c6ce;
@@ -15,20 +15,21 @@
 body{
 	font-family: 'Nunito', sans-serif;
 	background: var(--white);
+	height: 100%;
 
 }
 .content{
 	grid-area: content;
-	background: url('../img/background.png');
+	background: url('../img/background.png'), var(--primary);
 }
 
 .sidebar{
 	grid-area: sidebar;
 	justify-content: center;
 	background: linear-gradient(to right, 
-		var(--red), 
-		var(--purple), 
-		var(--blue));
+				var(--red), 
+				var(--purple), 
+				var(--blue));
 }
 
 .footer{
@@ -39,7 +40,6 @@ body{
 .container{
 	font-size: 1.5em;
 	width: 100%;
-	height: 100vh;
 	display: grid;
 	grid-template-areas: 
 		"sidebar"
